@@ -6,4 +6,11 @@ function initialize(){
 });
 let map= L.map('map').setView([48.614713, 2.458822],11);
 map.addLayer(CartoDB_DarkMatter);
+L.marker([48.617150, 2.466418]).addTo(map).bindPopup("48.617150, 2.466418"); //Paris
+L.marker([40.738808, -73.985159]).addTo(map).bindPopup("40.738808, -73.985159"); // New York
+L.marker([48.855877, 2.352206]).addTo(map);
+L.marker([48.855877, 2.352206]).addTo(map);
+L.marker([48.855877, 2.352206]).addTo(map);
+L.marker([48.855877, 2.352206]).addTo(map);
+L.marker([48.855877, 2.352206]).addTo(map);
 }
