@@ -13,3 +13,12 @@ width: 100vw;
     background-size: cover;
     opacity: 0.75;
 }
+#champ{
+    text-align: center;
+}
+#champ label{
+    display: inline-block;
+    padding-top: 45vh;
+    padding-bottom: 10px;
+    
+}

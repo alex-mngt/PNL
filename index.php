@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,12 @@
 
 <body>
     <div id="fond_site">
+        <div id="champ">
+            <label for="mdp">Mot de passe requis :</label>
+            <br>
+            <input type="mdp">
+        </div>
     </div>
 </body>
+
 </html>
