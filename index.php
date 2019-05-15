@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-gus le gros pd 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +12,19 @@ gus le gros pd
 <body>
     <div id="fond_site">
         <div id="champ">
-            <form action="post">
+            <form method="POST">
                 <label for="mdp">Mot de passe requis :</label>
                 <br>
-                <input type="mdp">
+                <input type="password" name="mdp">
             </form>
             <?php
+
+try{
+    $bdd = new PDO('mysql:host=localhost;dbname=pnl', 'root', 'floflo');
+    }
+    catch (exception $e) {
+    exit('Erreur : '.$e->getMessage());
+    }
             $dataTest = true;
             if (!isset($_POST['mdp']) || empty($_POST['mdp'])){
         $dataTest = false;
@@ -27,13 +32,13 @@ gus le gros pd
         $mdpClair = $_POST['mdp'];
     }
     if ($dataTest){
-        $getMDP = $bdd->prepare("SELECT password FROM `rgsrh`");
+        $getMDP = $bdd->prepare("SELECT 'password' FROM `password`");
         $getMDP->execute(array(':mdp' => $mdp));
         $tableauMDP = $getMDP -> fetchall(PDO::FETCH_ASSOC);
             if (empty($tableauMDP)){
-                echo "Mauvais mot de passe";
+                echo "<h3>Mauvais mot de passe</h3>";
             } else {
-                header("Location : http://?????????.map.php");
+                header("Location : https://google.com");
             }
         }
     ?>
