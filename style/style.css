@@ -15,10 +15,15 @@ width: 100vw;
 }
 #champ{
     text-align: center;
+    height: 100%;
+    width: 100%;
 }
 #champ label{
     display: inline-block;
     padding-top: 45vh;
     padding-bottom: 10px;
-    
+    font-family: "Open sans-serif";
+}
+#champ input{
+    border-radius: 20px;
 }
