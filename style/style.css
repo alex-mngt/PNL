@@ -18,16 +18,20 @@ width: 100vw;
     height: 100%;
     width: 100%;
 }
+#champ form{
+    width: 100%;
+    height: 100%;
+}
 #champ label{
     display: inline-block;
     padding-top: 45vh;
     padding-bottom: 10px;
     font-family: "Open sans-serif";
-    font-size: 2.5em;
+    font-size: 2em;
 }
 #champ input{
     border: none;
     border-radius: 6px;
     height: 4%;
-    width: 15%;
+    width: 20%;
 }

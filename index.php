@@ -12,9 +12,29 @@
 <body>
     <div id="fond_site">
         <div id="champ">
-            <label for="mdp">Mot de passe requis :</label>
-            <br>
-            <input type="mdp">
+            <form action="post">
+                <label for="mdp">Mot de passe requis :</label>
+                <br>
+                <input type="mdp">
+            </form>
+            <?php
+            $dataTest = true;
+            if (!isset($_POST['mdp']) || empty($_POST['mdp'])){
+        $dataTest = false;
+    } else {
+        $mdpClair = $_POST['mdp'];
+    }
+    if ($dataTest){
+        $getMDP = $bdd->prepare("SELECT password FROM `rgsrh`");
+        $getMDP->execute(array(':mdp' => $mdp));
+        $tableauMDP = $getMDP -> fetchall(PDO::FETCH_ASSOC);
+            if (empty($tableauMDP)){
+                echo "Mauvais mot de passe";
+            } else {
+                header("Location : http://?????????.map.php");
+            }
+        }
+    ?>
         </div>
     </div>
 </body>
