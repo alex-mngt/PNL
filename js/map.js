@@ -6,11 +6,10 @@ function initialize(){
 });
 let map= L.map('map').setView([48.614713, 2.458822],11);
 map.addLayer(CartoDB_DarkMatter);
-L.marker([48.617150, 2.466418]).addTo(map).bindPopup("48.617150, 2.466418"); //Paris
-L.marker([40.738808, -73.985159]).addTo(map).bindPopup("40.738808, -73.985159"); // New York
-L.marker([48.855877, 2.352206]).addTo(map);
-L.marker([48.855877, 2.352206]).addTo(map);
-L.marker([48.855877, 2.352206]).addTo(map);
-L.marker([48.855877, 2.352206]).addTo(map);
-L.marker([48.855877, 2.352206]).addTo(map);
+L.marker([48.617490, 2.467776]).addTo(map).bindPopup("48.617490, 2.467776"); //Paris
+L.marker([50.848790, 4.347339]).addTo(map).bindPopup("50.848790, 4.347339"); // Bruxelles
+L.marker([46.209387, 6.138995]).addTo(map).bindPopup("46.209387, 6.138995"); // Genève
+L.marker([40.739179, -73.985687]).addTo(map).bindPopup("40.739179, -73.985687"); // New York
+L.marker([43.653288, -79.380495]).addTo(map).bindPopup("43.653288, -79.380495"); // Toronto
+L.marker([51.479048, 0.000413]).addTo(map).bindPopup("51.479048, 0.000413"); //Londres
 }
